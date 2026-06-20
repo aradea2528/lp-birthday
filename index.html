@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday! 🎀</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" src="Happy-birthday-instrumental.mp3" loop></audio>
+<button id="musicToggle" class="music-toggle" onclick="toggleMusic()">🔊</button>
+
+<!-- CUSTOM CURSOR -->
+<div class="custom-cursor" id="cursor"></div>
+
+<!-- CONFETTI -->
+<div class="confetti-container" id="confetti"></div>
+
+<!-- FLOATING HEARTS BG -->
+<div class="hearts-bg" id="heartsBg"></div>
+
+<!-- BALLOONS -->
+<div id="balloons"></div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-emoji-row">🎀 🎂 🎁 🎉 🌸</div>
+  <h1 class="hero-title">Happy Birthday!</h1>
+  <p class="hero-name">SAYANGKUU 💕</p>
+  <p class="hero-subtitle">Hari ini hari yang paling spesial buat kamu! 🌸</p>
+  <div class="hero-tagline">🎈 Semoga hari ini penuh kebahagiaan ya! 🎈</div>
+
+  <div class="sparkle" style="top:20px; left:10%;">✨</div>
+  <div class="sparkle" style="top:40px; right:12%; font-size:1.2rem; animation-delay:0.4s;">⭐</div>
+  <div class="sparkle" style="bottom:20px; left:5%; font-size:1rem; animation-delay:0.8s;">🌟</div>
+  <div class="sparkle" style="bottom:30px; right:8%; font-size:1.3rem; animation-delay:0.2s;">✨</div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section id="photos" class="reveal">
+  <h2 class="section-title">📸 BIRTHDAY GIRL 💖</h2>
+  <p class="section-sub">Cewe Aku Yang Paling Cantik ~</p>
+
+  <div class="photo-grid">
+
+    <div class="photo-card">
+     <img src="foto1.jpg" alt="Foto 1">
+      <div class="photo-label">My favorite face 🌸</div>
+    </div>
+
+    <!-- FOTO 2 -->
+    <div class="photo-card">
+      <img src="foto2.jpg" alt="foto 2">
+      <div class="photo-label">Cantik selalu  💕</div>
+    </div>
+
+    <!-- FOTO 3 -->
+    <div class="photo-card">
+      <img src="foto3.jpg" alt="Foto 3">
+      <div class="photo-label">Senyum favorit 🍓</div>
+    </div>
+
+    <!-- FOTO 4 -->
+    <div class="photo-card">
+      <img src="foto4.jpg" alt="Foto 4">
+      <div class="photo-label">My girl 💖</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GIFT CARD -->
+<section id="gift" class="reveal">
+  <h2 class="section-title">💌 Ada Pesan Spesial!</h2>
+
+  <div class="gift-wrapper">
+    <div class="gift-box">
+      <div class="sparkle" style="top:10px; right:15px; font-size:1.2rem;">✨</div>
+      <div class="sparkle" style="bottom:15px; left:10px; font-size:1rem; animation-delay:0.6s;">🌟</div>
+      <span class="gift-icon" onclick="openGift()">💌</span>
+      <p class="gift-hint">✨ Ada Pesan Nih Dari Adit ✨</p>
+      <button class="gift-btn" onclick="openGift()">Buka Pesanku 💌</button>
+    </div>
+  </div>
+</section>
+
+<!-- GIFT CARD OVERLAY -->
+<div class="card-overlay" id="cardOverlay">
+  <div class="card-inner">
+    <button class="card-close" onclick="closeGift()">✕</button>
+    <div class="card-deco">💌 🌸 💌</div>
+    <h3 class="card-title">Untuk Kamu yang Tersayang</h3>
+    <p class="card-message">
+    who's birthday today???????  yeayyyyy betul, hari ulang tahun kamuuuuuuu sayang. Happy birthday, cinta!🎉💕 Setiap hari bareng kamu selalu jadi hari yang spesial buat aku🌸. Makasih udah selalu ada, jadi tempat aku pulang, dan jadi alasan aku senyum tiap hari😊✨. Semoga umur baru ini membawa lebih banyak tawa, mimpi yang terwujud, dan waktu berdua yang nggak terlupakan. Aku sayang kamu lebih dari kata-kata yang bisa aku ungkapin🥹❤️.
+      <br><br>
+      Semoga hari ulang tahunmu penuh kebahagiaan
+      dan semua impianmu tercapai ya sayang! 💕
+    </p>
+    <p class="card-sign">
+      Dengan cinta, <br>
+      cowo kamu tersayanggggg 🌸
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<section id="footer" class="reveal">
+  <div class="star-row">⭐ 🌟 ✨ 🌟 ⭐</div>
+  <p class="footer-text">Selamat Ulang Tahun Sayang! 🎂</p>
+  <p class="footer-sub">Selalu bahagia, sehat, dan dikasihi 💖</p>
+  <p class="footer-credit">Made with 💗 especially for you</p>
+  <div class="star-row">🌸 💕 🌸 💕 🌸</div>
+</section>
+
+<script src="script.js"></script>
+<script src="music.js"></script>
+</body>
+</html>
